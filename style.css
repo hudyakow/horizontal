@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body {
+    height: 200vh;
+}
+.main {
+    background: url("image/back5.jpg") no-repeat fixed;
+    /*
+     background: url("image/back6.png") no-repeat fixed;
+    */
+    background-size: cover;
+    height: 120vh;
+    width: 100%;
+}
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    /*width: 20%;
+    height: 60px;
+    background: #fff;*/
+    z-index: 999999;
+}
+nav, nav ul, nav ul li, nav ul li a {
+    list-style-type: none;
+}
+nav ul li a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+    color: #000;
+    padding: 15px 35px;
+    border: 1px solid #000;
+    background: #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background: #000;
+    color: #fff;
+    transition: .5s;
+}
+nav ul li a:not(:hover) {
+    transition: .5s;
+}
+.main h1 {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+.text {
+    margin: 3% 0 0 5%;
+}
+h2 {
+    display: inline-block;
+    display: none;
+    transition: .7s;
+}
+h1 {
+    position: relative;
+}
+/*h1:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    border: 2px solid red;
+    width: calc(109% + 14px);
+    left: -10%;
+}*/
+.back {
+    width: 100%;
+    height: 80px;
+   /* border: 1px solid #fff;
+    border-left: none;
+    border-right: none;*/
+    position: absolute;
+    left: 0;
+    transition: .7s;
+    border: 1px solid transparent;
+    border-left: none;
+    border-right: none;
+}
+.back h1 {
+    margin-left: 7%;
+    display: inline-block;
+}
+.back:nth-child(2) {
+    margin-top: 80px;
+}
+.back:nth-child(3) {
+    margin-top: 160px;
+}
+.back:nth-child(4) {
+    margin-top: 240px;
+}
+.back:nth-child(5) {
+    margin-top: 320px;
+}
+.back:nth-child(6) {
+    margin-top: 400px;
+}
+.back:nth-child(7) {
+    margin-top: 480px;
+}
+.back:nth-child(8) {
+    margin-top: 560px;
+}
+.back:nth-child(9) {
+    margin-top: 640px;
+}
+.back:nth-child(10) {
+    margin-top: 720px;
+}
+.back:hover:nth-child(1), .back:hover:nth-child(2), .back:hover:nth-child(3), .back:hover:nth-child(4), .back:hover:nth-child(5),
+.back:hover:nth-child(6), .back:hover:nth-child(7), .back:hover:nth-child(8), .back:hover:nth-child(9), .back:hover:nth-child(10) {
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+    transition: .7s;
+}
+.back:hover:nth-child(1) h2, .back:hover:nth-child(2) h2, .back:hover:nth-child(3) h2, .back:hover:nth-child(4) h2, .back:hover:nth-child(5) h2, 
+.back:hover:nth-child(6) h2, .back:hover:nth-child(7) h2, .back:hover:nth-child(8) h2, .back:hover:nth-child(9) h2, .back:hover:nth-child(10) h2 {
+    display: block;
+    animation: hide .2s ease-in-out;
+}
+h2 {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+    color: #fff;
+}
+img {
+    width: 150px;
+    height: 150px;
+    margin: 5% 0 0 7%;
+    animation: spin 5s linear 0s infinite;
+    pointer-events: none; 
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+@keyframes hide {
+    0%, 50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*#circularcursor {
+    background-color: transparent;
+    border: 2px solid #111;    
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+    background: url("image/works/1.png") no-repeat center center;
+    background-size: cover;
+    cursor: none;
+    visibility: hidden;
+    margin-top: -20%;
+}
+#circularcursor2 {
+    background-color: transparent;
+    border: 2px solid #111;    
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+    background: url("image/works/2.png") no-repeat center center;
+    background-size: cover;
+    cursor: none;
+    visibility: hidden;
+    margin-top: -25%;
+}
+.back:hover:nth-child(1) #circularcursor, .back:hover:nth-child(2) #circularcursor2 {
+    visibility: visible;
+    cursor: none;
+}*/
+.image {
+    position: absolute;
+    right: 25%;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    display: none;
+    transition: .7s;
+}
+.back:nth-child(1) .image {
+    background: url("image/works/1.png") no-repeat center center;
+    background-size: cover;
+}
+.back:nth-child(2) .image {
+    background: url("image/works/2.png") no-repeat center center;
+    background-size: cover;
+}
+.back:nth-child(3) .image {
+    background: url("image/works/3.png") no-repeat center center;
+    background-size: cover;
+}
+.back:nth-child(4) .image {
+    background: url("image/works/4.png") no-repeat center center;
+    background-size: cover;
+}
+.back:nth-child(5) .image {
+    background: url("image/works/5.png") no-repeat center center;
+    background-size: cover;
+}
+.back:nth-child(6) .image {
+    background: url("image/works/6.png") no-repeat center center;
+    background-size: cover;
+}
+.back:nth-child(7) .image {
+    background: url("image/works/7.png") no-repeat center center;
+    background-size: cover;
+}
+.back:nth-child(8) .image {
+    background: url("image/works/8.png") no-repeat center center;
+    background-size: cover;
+}
+.back:nth-child(9) .image {
+    background: url("image/works/9.png") no-repeat center center;
+    background-size: cover;
+}
+.back:nth-child(10) .image {
+    background: url("image/works/10.png") no-repeat center center;
+    background-size: cover;
+}
+.back:hover:nth-child(1) .image, .back:hover:nth-child(2) .image, .back:hover:nth-child(3) .image, .back:hover:nth-child(4) .image, 
+.back:hover:nth-child(5) .image, .back:hover:nth-child(6) .image, .back:hover:nth-child(7) .image, .back:hover:nth-child(8) .image, 
+.back:hover:nth-child(9) .image, .back:hover:nth-child(10) .image {
+    display: block;
+    animation: hide .2s ease-in-out;
+}
+.second {
+    background: url("image/back6.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.second__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.second h1 {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 140px;
+    line-height: 150px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.third {
+    background: url("image/back8.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.Sphere {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
